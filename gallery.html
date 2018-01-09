@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chalk's Farm</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css" media="screen">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header class="background">
+        <div class="altBanner">
+            <img src="assets/imgs/chalk_white_logo.png" id="altLogo" alt="logo">
+        </div><!--altBanner-->
+        <h1 id="mainHeader">Caravan Holidays in West Sussex</h1>
+    </header><!--background-->
+
+    <nav id="topNav">
+        <ul id="topNavList">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Gallery</a>
+            </li>
+            <li>
+                <a href="local.html">Local Area</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact us</a>
+            </li>
+        </ul><!--topNavList-->
+    </nav><!--topNav-->
+
+    <main>
+        <h2 id="pageHeader">Inside our caravans</h2>
+        <div class="galleryMain">
+            <p><img onclick="showPic1();" src="assets/imgs/interior_thmb.jpg" class="galleryThmb" alt="caravan"></p>
+            <p><img onclick="showPic2();" src="assets/imgs/bedroom_thmb.jpg" class="galleryThmb" alt="main bedroom"></p>
+            <p><img onclick="showPic3();" src="assets/imgs/bedroom5_thmb.jpg" class="galleryThmb" alt="second bedroom"></p>
+            <p><img onclick="showPic4();" src="assets/imgs/bathroom_thmb.jpg" class="galleryThmb" alt="bathroom"></p>
+            <div id="frame1"></div>
+            <div id="frame2"></div>
+        </div>
+    </main>
+
+    <footer id="footerInfo">
+        <p>&copy; 2017 Chalk's Farm Ltd</p>
+        <div id="socialBtns">
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <img src="assets/imgs/instagram_white.png" class="socialBtn" alt="instagram">
+            </a>
+            <a href="https://twitter.com/login?lang=en-gb" target="_blank">
+                <img src="assets/imgs/twitter_white.png" class="socialBtn" alt="twitter">
+            </a>
+            <a href="https://en-gb.facebook.com/" target="_blank">
+                <img src="assets/imgs/facebook_white.png" class="socialBtn" alt="facebook">
+            </a>
+        </div><!--socialBtns-->
+        <nav id="bottomNav">
+            <ul id="bottomNavList">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="local.html">Local Area</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact us</a>
+                </li>
+            </ul><!--bottomNavList-->
+        </nav><!--bottomNav-->
+    </footer> <!--footerInfo-->
+
+</div><!--wrapper-->
+
+<script src="assets/js/galleryjs.js"></script>
+</body>
+</html>

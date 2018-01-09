@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chalk's Farm</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css" media="screen">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+    <header class="background">
+        <div class="altBanner">
+            <img src="assets/imgs/chalk_white_logo.png" id="altLogo" alt="logo">
+        </div><!--altBanner-->
+        <h1 id="mainHeader">Caravan Holidays in West Sussex</h1>
+    </header><!--background-->
+
+    <nav id="topNav">
+        <ul id="topNavList">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="gallery.html">Gallery</a>
+            </li>
+            <li>
+                <a href="local.html">Local Area</a>
+            </li>
+            <li>
+                <a href="#">Contact us</a>
+            </li>
+        </ul><!--topNavList-->
+    </nav><!--topNav-->
+
+
+    <main>
+        <h2 id="pageHeader">Contact Us</h2>
+        <div class="body">
+            <p class="bodyText">Fill in the form below to contact us:</p>
+            <div class="contactWrapper">
+                <form action="" method="get" class="bodyText">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <label for="subjectbox">Subject (choose from dropdown list):</label>
+                    <select name="Subject" id="subjectbox">
+                        <option value="NewBookingEnquiry">New Booking Enquiry</option>
+                        <option value="ExistingBooking">Existing Booking Enquiry</option>
+                        <option value="MoreInfo">More Info</option>
+                        <option value="Feedback">Feedback</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea name="Message" id="message" cols="150" rows="6" placeholder="Message" required>
+                    </textarea>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </form>
+            </div><!--contactWrapper-->
+        <h3 class="contactSubHeader">Find Us</h3>
+            <div class="findus">
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20179.65646181194!2d-0.9077560035395112!3d50.78563761690824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb47e19e557a1e970!2sWalnut+Tree!5e0!3m2!1sen!2suk!4v1513167750248" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div><!--map-->
+                <div class="contact">
+                    <p class="contactText">Address: Chalk Farm Lane, West Wittering, West Sussex</p>
+                    <p class="contactText">Email: info@chalksfarm.com</p>
+                    <p class="contactText">Telephone: 0101 000 1000</p>
+                </div><!--contact-->
+            </div><!--findus-->
+        </div><!--body-->
+    </main>
+
+    <footer id="footerInfo">
+            <p>&copy; 2017 Chalk's Farm Ltd</p>
+            <div id="socialBtns">
+                <a href="https://www.instagram.com/?hl=en" target="_blank">
+                    <img src="assets/imgs/instagram_white.png" class="socialBtn" alt="instagram">
+                </a>
+                <a href="https://twitter.com/login?lang=en-gb" target="_blank">
+                    <img src="assets/imgs/twitter_white.png" class="socialBtn" alt="twitter">
+                </a>
+                <a href="https://en-gb.facebook.com/" target="_blank">
+                    <img src="assets/imgs/facebook_white.png" class="socialBtn" alt="facebook">
+                </a>
+            </div><!--socialBtns-->
+            <nav id="bottomNav">
+                <ul id="bottomNavList">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="local.html">Local Area</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul><!--bottomNavList-->
+            </nav><!--bottomNav-->
+    </footer> <!--footerInfo-->
+</div><!--wrapper-->
+</body>

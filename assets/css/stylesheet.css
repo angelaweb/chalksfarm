@@ -1,0 +1,329 @@
+/*-----------------------
+    CSS Reset
+ ------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0b2 | 201101 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output,
+ruby, section, summary, time, mark,
+audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+img{vertical-align: top;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav,
+section, canvas, main, video { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+/*-----------------------
+    GENERAL
+ ------------------------*/
+
+
+.wrapper{
+    margin: 0 auto;
+    width: 960px;
+}
+
+body{
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: medium;
+    line-height: 1.6em;
+    color: #777777;
+}
+
+
+/*-----------------------
+    HEADER
+ ------------------------*/
+
+.background {
+    background: url("../imgs/caravanbanner3.jpg");
+    height: 440px;
+    background-size: cover;
+}
+
+#logo, #altLogo {
+    margin-top: 50px;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+#mainHeader{
+    color: #ffffff;
+    font-size: 240%;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.arrows{
+    margin-top: 200px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+
+.altBanner{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/*-----------------------
+    NAVIGATION
+ ------------------------*/
+
+#topNav{
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+#topNav a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 50px 10px;
+}
+
+#topNavList {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 960px;
+    background-color: #5C8E96;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+
+#topNav a:hover{
+    background-color: #ffffff;
+    color: #5C8E96;
+}
+
+
+/*-----------------------
+    MAIN BODY
+ ------------------------*/
+
+
+#pageHeader, .contactSubHeader{
+    font-size: 150%;
+    padding: 20px 0 25px;
+    font-weight: bold;
+}
+
+.bodyText, .subHeader{
+    padding-bottom: 20px;
+}
+
+.bodyText{
+    text-decoration: none;
+}
+
+
+.bodyImage {
+    float: right;
+    padding: 0 0 20px 20px;
+}
+
+.subHeader {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#link {
+    text-decoration: none;
+    color: #5C8E96;
+}
+
+
+/*-----------------------
+    FOOTER
+ ------------------------*/
+
+#footerInfo{
+    background-color: #5C8E96;
+    color: #ffffff;
+    height: 60px;
+    padding: 10px 10px 20px;
+    margin: 25px 0;
+    font-size: 80%;
+}
+
+#socialBtns{
+    color: #ffffff;
+    float: right;
+    padding-right: 10px;
+}
+
+#socialBtns a{
+    text-decoration: none;
+}
+
+.socialBtn{
+    padding-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+#bottomNavList{
+    display: flex;
+    justify-content: flex-start;
+    text-transform: full-width;
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+#bottomNav a:hover{
+    color: #bbbbbb;
+}
+
+#bottomNavList a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 10px;
+    border-right: #ffffff solid 1px;
+}
+
+#bottomNavList>li:first-child a{
+    padding-left: 0;
+}
+
+#bottomNavList>li:last-child a{
+    border: none;
+}
+
+
+
+/*-----------------------
+    GALLERY
+ ------------------------*/
+
+.galleryMain{
+    position: relative;
+    height: 775px;
+}
+
+.galleryThmb{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    margin-bottom: 25px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+#frame1, #frame2{
+    position: absolute;
+    top: 0;
+    height: 725px;
+    background-color: #5C8E96;
+    z-index: 10;
+    border-bottom: 25px;
+}
+
+#frame1{
+    left: 0;
+    width: 200px;
+}
+
+#frame2 {
+    right: 0;
+    width: 725px;
+    background: #5C8E96 url("../imgs/chalk_white_logo.png") no-repeat center;
+}
+
+
+/*-----------------------
+    LOCAL AREA
+------------------------*/
+
+.bodyImage2{
+    padding: 0 0 80px 20px;
+    float: right;
+}
+
+.localImages{
+    float: right;
+    width: 400px;
+}
+
+/*-----------------------
+    CONTACT
+------------------------*/
+
+
+
+input, textarea, select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #5C8E96;
+    border-radius: 4px;
+    outline: none;
+    display: block;
+
+}
+
+input:focus, textarea:focus{
+    border: 4px solid #5C8E96;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: #5C8E96;
+    border: none;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 150px;
+    display: inline;
+    font-size: 120%;
+}
+
+#name, #email, #subjectbox{
+    width: 400px;
+}
+
+#subjectbox{
+    color: #757575;
+    background-color: #ffffff;
+}
+
+.contact{
+    padding-left: 40px;
+}
+
+.contactText{
+    font-size: 120%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.findus{
+    display: flex;
+}
